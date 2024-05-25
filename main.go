@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Welcome Go!")
+	fmt.Println("Despegando 🚀🚀🚀")
 
 	port := os.Getenv("PORT")
 
@@ -21,7 +21,7 @@ func main() {
 	
 	app.Use(cors.New())
 
-	app.Static("/","./client/dist")
+	app.Static("/", "./client/dist")
 
 	app.Get("/users", func(c *fiber.Ctx) error{
 		return c.JSON(&fiber.Map{
@@ -30,6 +30,6 @@ func main() {
 	})
 
 
-	fmt.Println("Servidor iniciado en puerto :3000")
 	app.Listen(":" + port)
+	fmt.Println("Server on port 3000")
 }
