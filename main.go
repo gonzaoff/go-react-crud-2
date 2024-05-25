@@ -25,7 +25,7 @@ func main() {
 
 	app.Get("/users", func(c *fiber.Ctx) error{
 		return c.JSON(&fiber.Map{
-			"data": "usuarios desde el backend",
+			"data": "usuarios desde el back",
 		})
 	})
 
