@@ -66,7 +66,7 @@ func main() {
 			}})
 
 		return c.JSON(&fiber.Map{
-			"data": "Guardando user",
+			"data": "Guardando usuario",
 		})
 	})
 
